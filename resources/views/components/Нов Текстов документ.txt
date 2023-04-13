@@ -1,0 +1,3 @@
+<label for="{{ $attributes->get('for') }}" class="{{ $attributes->get('class') }}">
+    {{ $slot }}
+</label>

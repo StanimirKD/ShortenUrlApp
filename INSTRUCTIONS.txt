@@ -1,0 +1,32 @@
+1. Run XAMPP Control Panel(I am using v3.3.0) and turn on Apache and MySQL.
+2. Open Command Prompt and locate the folder "project-name".
+3. Run the command "php artisan serve". This should start the server, the command prompt should provide you with a url.
+It's probbably: http://127.0.0.1:8000/
+4. From there if you click on "My Short URLs"/"Dashboard" or "Log In" you will be redirected to the Log-in page(since it's required
+for you to log-in to see your shortenned links). If you click "Register" you will be able to register.
+5. Fill the log-in or register page and after clicking the final button you should end up at the dashboard page.
+6. To go back to the original page, you can log-out and repeat the preocess until now
+7. To create a new shortenned URL click on either the heather button "Create New URL" or the blue button under "Create Short URL"
+8. Fill-in the website link that you wish to shortten inside the Target URL. If it's not valid, it will let you know
+9. After that you click clreate short URL and it should tell you if the action was successful
+10. If it was successful, you can choose to shorten more links or click "back to dashboard"
+11. Your links must be listed there. You can click or copy-paste the shortenned links to be redirected to the desired website
+12. You can also click the button on the right to either delete it(by just clicking delete) or edit it.
+13. Clicking edit will redirect you to another page which will allow you to change the target website
+
+
+Interesting files:
+1. app\Http\Controllers:
+	-Dashboard Controller
+	-RedirectController
+	-ShortUrlController
+2. resources\views:
+	-dashboard.blade
+	-welcome.blade
+	-shorten.form.blade
+3. resources\views\shorturls:
+	-create.blade
+	-edit.blade
+4. routes:
+	-web
+	
